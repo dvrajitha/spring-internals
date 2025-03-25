@@ -4,12 +4,12 @@ import com.example.demo.annotations.Timed;
 import com.example.demo.model.Customer;
 import com.example.demo.repo.CustomerRepo;
 import com.example.demo.service.CustomerService;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Component
-class CustomerServiceImpl implements CustomerService {
+@Service
+public class CustomerServiceImpl implements CustomerService {
     final CustomerRepo customerRepo;
 
     public CustomerServiceImpl(CustomerRepo customerRepo) {
@@ -19,7 +19,6 @@ class CustomerServiceImpl implements CustomerService {
     @Override
     @Timed
     public List<Customer> getAllCustomers() {
-        System.out.println("===========================>3" + getClass());
         return customerRepo.findAllCustomers();
     }
 }

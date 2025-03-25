@@ -18,8 +18,8 @@ public class DemoAppBeanFactoryPostProcessor implements BeanFactoryPostProcessor
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
         logger.info("Listing all available beans");
         Arrays.stream(beanFactory.getBeanDefinitionNames())
-                .filter(name -> name.toLowerCase()
-                        .contains("customer"))
+//                .filter(name -> name.toLowerCase()
+//                        .contains("customer"))
                 .forEach(System.out::println);
         String[] beanNamesForType = beanFactory.getBeanNamesForType(CustomerService.class);
         logger.info("Listing all beans of type: {}", Arrays.toString(beanNamesForType));
