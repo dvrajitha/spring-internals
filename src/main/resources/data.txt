@@ -1,3 +1,4 @@
+🚀🚀🚀🚀🚀🚀🚀🚀
 1. Spring Boot: because XML was too mainstream for pain.
 2. My Java app started in 3 seconds—must be a bug.
 3. I told my manager I'm full stack—now I'm debugging CSS.
@@ -8,5 +9,4 @@
 8. Spring Boot: turning monoliths into microservices one dependency at a time.
 9. My code compiles—time to push to production!
 10. Behind every successful `@Service` is a sleep-deprived developer.
-
-
+🚀🚀🚀🚀🚀🚀🚀🚀🚀

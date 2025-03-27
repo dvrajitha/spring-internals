@@ -1,6 +1,5 @@
 package com.example.demo.service.impl;
 
-import com.example.demo.annotations.Timed;
 import com.example.demo.model.Customer;
 import com.example.demo.repo.CustomerRepo;
 import com.example.demo.service.CustomerService;
@@ -17,7 +16,7 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    @Timed
+    //@Timed
     public List<Customer> getAllCustomers() {
         return customerRepo.findAllCustomers();
     }

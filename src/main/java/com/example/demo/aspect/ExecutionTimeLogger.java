@@ -18,7 +18,7 @@ public class ExecutionTimeLogger {
 
         String methodName = joinPoint.getSignature()
                 .toShortString();
-        System.out.println("In Aspect: \uD83D\uDC49\uD83C\uDFFE" + methodName + " executed in " + duration + " ms ✅ ");
+        System.out.println("In Aspect: ✅" + methodName + " executed in " + duration + " ms ✅ ");
 
         return result;
     }
